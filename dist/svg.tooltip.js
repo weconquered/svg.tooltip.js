@@ -22,8 +22,8 @@
                 var tooltip_width = $(".strategy-tooltip").width();
                 var tooltip_height = $(".strategy-tooltip").height();
 
-                let x_delta = 8;
-                let y_delta = 8;
+                var x_delta = 8;
+                var y_delta = 8;
 
                 var result = {
                     x: 0,
@@ -37,14 +37,14 @@
                         break;
                     case "bottom":
                         result.x = mouse_x - 0.5 * tooltip_width;
-                        result.y = mouse_y + tooltip_height + y_delta;
+                        result.y = mouse_y + y_delta;
                         break;
                     case "left":
                         result.x = mouse_x - tooltip_width - x_delta;
                         result.y = mouse_y - 0.5 * tooltip_height;
                         break;
                     case "right":
-                        result.x = mouse_x + tooltip_width + x_delta;
+                        result.x = mouse_x + x_delta;
                         result.y = mouse_y - 0.5 * tooltip_height;
                         break;
                 }
@@ -60,7 +60,7 @@
 
                 if ($(".strategy-tooltip").length == 0) {
 
-                    var div = `<div class="strategy-tooltip"></div>`;
+                    var div = '<div class="strategy-tooltip"></div>';
                     $("body").append(div);
                     $(".strategy-tooltip").css({
                             "position": "fixed",
