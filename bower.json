@@ -1,0 +1,27 @@
+{
+  "name": "svg.tooltip.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/weconquered/svg.tooltip.js",
+  "authors": [
+    "weconquered/cowboy",
+  ],
+  "description": "An extension for the svg.js library to make elements has tooltip",
+  "main": [
+    "./dist/svg.tooltip.js"
+  ],
+  "keywords": [
+    "svg.js",
+    "tooltip"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "svg.js":"^2.0.1"
+  }
+}
